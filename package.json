@@ -1,0 +1,30 @@
+{
+  "name": "lutils",
+  "version": "0.0.1",
+  "description": "前端常用武器库",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "node build/build.js",
+    "test": "node build/test.js"
+  },
+  "keywords": [
+    "util",
+    "tool"
+  ],
+  "author": "lion1ou",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "chalk": "^2.3.0",
+    "copy": "^0.3.1",
+    "koa": "^2.4.1",
+    "koa-static": "^4.0.1",
+    "open": "0.0.5",
+    "ora": "^1.3.0",
+    "rimraf": "^2.6.2",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "webpack": "^3.8.1"
+  }
+}
