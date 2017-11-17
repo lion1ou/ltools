@@ -2,7 +2,7 @@
 * @Author: lion1ou
 * @Date:   2017-11-16 20:10:38
 * @Last Modified by:   lion1ou
-* @Last Modified time: 2017-11-17 18:16:06
+* @Last Modified time: 2017-11-17 18:44:44
 */
 const path = require('path')
 const fs = require('fs')
@@ -20,7 +20,7 @@ new Promise((resolve, reject) => {
     // 构建全量压缩包
     let building = ora('building...')
     building.start()
-    rm(path.resolve(rootPath, 'min', `${pkg.name}.min.js`), err => {
+    rm(path.resolve(rootPath, 'min', `*.js`), err => {
         if (err) throw (err)
         webpack(config, function (err, stats) {
             if (err) throw (err)
