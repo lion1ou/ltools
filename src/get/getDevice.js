@@ -2,14 +2,13 @@
 * @Author: lion1ou
 * @Date:   2017-11-16 20:08:25
 * @Last Modified by:   lion1ou
-* @Last Modified time: 2017-11-16 20:08:30
+* @Last Modified time: 2017-11-25 15:45:06
 */
 /**
- *
- * @desc 获取操作系统类型
- * @return {String}
+ * [getDevice 获取操作系统类型]
+ * @return {[type]} [description]
  */
-function getOS() {
+function getDevice() {
     var userAgent = 'navigator' in window && 'userAgent' in navigator && navigator.userAgent.toLowerCase() || '';
     var vendor = 'navigator' in window && 'vendor' in navigator && navigator.vendor.toLowerCase() || '';
     var appVersion = 'navigator' in window && 'appVersion' in navigator && navigator.appVersion.toLowerCase() || '';
@@ -22,4 +21,4 @@ function getOS() {
     if (/win/i.test(appVersion) && /phone/i.test(userAgent)) return 'windowsPhone'
 }
 
-module.exports = getOS;
+module.exports = getDevice;
