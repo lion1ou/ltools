@@ -1,6 +1,6 @@
 {
   "name": "ltools",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "前端常用武器库",
   "main": "src/index.js",
   "scripts": {
